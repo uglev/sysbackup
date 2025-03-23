@@ -31,7 +31,7 @@ cp -r /usr/local/etc $DIR_NAME_USR
 cp -R /var/vmail $DIR_NAME_VAR
 cp -R /etc $DIR_NAME
 
-cd /usr/home/finanalyste/data/.backup
+cd /usr/home/yourname/data/.backup
 tar -czvf "$NEW_FILE" "$DIR_NAME"
 
 if [ $? -eq 0 ]; then
