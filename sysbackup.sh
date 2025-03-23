@@ -2,15 +2,15 @@
 
 DATE=$(date +%Y.%m.%d)
 NEW_FILE="system-$DATE.tar.gz"
-DIR_NAME="/usr/home/finanalyste/data/.backup/system-$DATE"
+DIR_NAME="/usr/home/yourname/data/.backup/system-$DATE"
 mkdir "$DIR_NAME"
-DIR_NAME_USR="/usr/home/finanalyste/data/.backup/system-$DATE/usr"
+DIR_NAME_USR="/usr/home/yourname/data/.backup/system-$DATE/usr"
 mkdir "$DIR_NAME_USR"
-DIR_NAME_USR="/usr/home/finanalyste/data/.backup/system-$DATE/usr/local"
+DIR_NAME_USR="/usr/home/yourname/data/.backup/system-$DATE/usr/local"
 mkdir "$DIR_NAME_USR"
-DIR_NAME_USR="/usr/home/finanalyste/data/.backup/system-$DATE/usr/local/etc"
+DIR_NAME_USR="/usr/home/yourname/data/.backup/system-$DATE/usr/local/etc"
 mkdir "$DIR_NAME_USR"
-DIR_NAME_VAR="/usr/home/finanalyste/data/.backup/system-$DATE/var"
+DIR_NAME_VAR="/usr/home/yourname/data/.backup/system-$DATE/var"
 mkdir "$DIR_NAME_VAR"
 
 cp -R /usr/local/etc/apache24 $DIR_NAME_USR
